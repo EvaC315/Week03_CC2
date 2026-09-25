@@ -1,0 +1,53 @@
+{"chunk":null,"ts":"2026-09-25T00:30:24Z","pid":39897,"engine":"r","severity":"error","render":false,"text":"## Error: argument \"x\" is missing, with no default"}
+{"chunk":null,"ts":"2026-09-25T00:31:59Z","pid":39897,"engine":"r","severity":"error","render":false,"text":"## Error: could not find function \"receipt\""}
+{"chunk":null,"ts":"2026-09-25T00:40:01Z","pid":39897,"engine":"r","severity":"error","render":false,"text":"## Error: argument \"x\" is missing, with no default"}
+{"chunk":null,"ts":"2026-09-25T00:43:27Z","pid":39897,"engine":"r","severity":"error","render":false,"text":"## Error: could not find function \"select\""}
+{"chunk":null,"ts":"2026-09-25T00:43:46Z","pid":39897,"engine":"r","severity":"error","render":false,"text":"## Error: could not find function \"select\""}
+{"chunk":null,"ts":"2026-09-25T00:44:28Z","pid":39897,"engine":"r","severity":"error","render":false,"text":"## Error: could not find function \"select\""}
+{"chunk":null,"ts":"2026-09-25T00:44:37Z","pid":39897,"engine":"r","severity":"error","render":false,"text":"## Error: could not find function \"select\""}
+{"chunk":null,"ts":"2026-09-25T00:51:18Z","pid":39897,"engine":"r","severity":"warning","render":false,"warning":"## Warning: package ‘dplyr’ was built under R version 4.4.3"}
+{"chunk":null,"ts":"2026-09-25T00:51:26Z","pid":39897,"engine":"r","severity":"error","render":false,"text":"## Error: no applicable method for 'select' applied to an object of class \"character\""}
+{"chunk":null,"ts":"2026-09-25T00:51:42Z","pid":39897,"engine":"r","severity":"error","render":false,"text":"## Error: undefined columns selected"}
+{"chunk":null,"ts":"2026-09-25T00:51:58Z","pid":39897,"engine":"r","severity":"error","render":false,"text":"## Error: object 'cc1_data_mod' not found"}
+{"chunk":null,"ts":"2026-09-25T00:52:01Z","pid":39897,"engine":"r","severity":"error","render":false,"text":"## Error: undefined columns selected"}
+{"chunk":null,"ts":"2026-09-25T00:53:24Z","pid":39897,"engine":"r","severity":"error","render":false,"text":"## Error: undefined columns selected"}
+{"chunk":null,"ts":"2026-09-25T00:54:23Z","pid":39897,"engine":"r","severity":"error","render":false,"text":"## Error: no applicable method for 'select' applied to an object of class \"character\""}
+{"chunk":null,"ts":"2026-09-25T00:57:08Z","pid":39897,"engine":"r","severity":"error","render":false,"text":"## Error: object 'flower_number' not found"}
+{"chunk":null,"ts":"2026-09-25T00:57:38Z","pid":39897,"engine":"r","severity":"error","render":false,"text":"## Error: undefined columns selected"}
+{"chunk":null,"ts":"2026-09-25T00:57:57Z","pid":39897,"engine":"r","severity":"error","render":false,"text":"## Error: object 'flower_number' not found"}
+{"chunk":null,"ts":"2026-09-25T01:01:00Z","pid":39897,"engine":"r","severity":"error","render":false,"text":"## Error: no applicable method for 'filter' applied to an object of class \"logical\""}
+{"chunk":null,"ts":"2026-09-25T01:01:40Z","pid":39897,"engine":"r","severity":"error","render":false,"text":"## Error: no applicable method for 'filter' applied to an object of class \"logical\""}
+{"chunk":null,"ts":"2026-09-25T01:12:59Z","pid":39897,"engine":"r","severity":"error","render":false,"text":"## Error: no applicable method for 'filter' applied to an object of class \"logical\""}
+{"chunk":null,"ts":"2026-09-25T01:13:26Z","pid":39897,"engine":"r","severity":"error","render":false,"text":"## Error: undefined columns selected"}
+{"chunk":null,"ts":"2026-09-25T01:14:31Z","pid":39897,"engine":"r","severity":"error","render":false,"text":"## Error: no applicable method for 'filter' applied to an object of class \"logical\""}
+{"chunk":null,"ts":"2026-09-25T01:14:58Z","pid":39897,"engine":"r","severity":"error","render":false,"text":"## Error: undefined columns selected"}
+{"chunk":null,"ts":"2026-09-25T01:18:51Z","pid":39897,"engine":"r","severity":"error","render":false,"text":"## Error: undefined columns selected"}
+{"chunk":null,"ts":"2026-09-25T01:19:48Z","pid":39897,"engine":"r","severity":"warning","render":false,"warning":"## Warning: package ‘ggplot2’ was built under R version 4.4.3"}
+{"chunk":null,"ts":"2026-09-25T01:19:48Z","pid":39897,"engine":"r","severity":"warning","render":false,"warning":"## Warning: package ‘tibble’ was built under R version 4.4.3"}
+{"chunk":null,"ts":"2026-09-25T01:19:48Z","pid":39897,"engine":"r","severity":"warning","render":false,"warning":"## Warning: package ‘tidyr’ was built under R version 4.4.3"}
+{"chunk":null,"ts":"2026-09-25T01:19:48Z","pid":39897,"engine":"r","severity":"warning","render":false,"warning":"## Warning: package ‘readr’ was built under R version 4.4.3"}
+{"chunk":null,"ts":"2026-09-25T01:19:48Z","pid":39897,"engine":"r","severity":"warning","render":false,"warning":"## Warning: package ‘purrr’ was built under R version 4.4.3"}
+{"chunk":null,"ts":"2026-09-25T01:19:49Z","pid":39897,"engine":"r","severity":"warning","render":false,"warning":"## Warning: package ‘lubridate’ was built under R version 4.4.3"}
+{"chunk":null,"ts":"2026-09-25T01:34:52Z","pid":39897,"engine":"r","severity":"error","render":false,"text":"## Error: undefined columns selected"}
+{"chunk":null,"ts":"2026-09-25T01:35:55Z","pid":39897,"engine":"r","severity":"error","render":false,"text":"## Error: undefined columns selected"}
+{"chunk":null,"ts":"2026-09-25T01:36:22Z","pid":39897,"engine":"r","severity":"error","render":false,"text":"## Error: undefined columns selected"}
+{"chunk":null,"ts":"2026-09-25T01:38:16Z","pid":39897,"engine":"r","severity":"error","render":false,"text":"## Error: argument 2 is empty"}
+{"chunk":null,"ts":"2026-09-25T01:38:26Z","pid":39897,"engine":"r","severity":"error","render":false,"text":"## Error: undefined columns selected"}
+{"chunk":null,"ts":"2026-09-25T01:38:46Z","pid":39897,"engine":"r","severity":"error","render":false,"text":"## Error: argument 1 is empty"}
+{"chunk":null,"ts":"2026-09-25T02:06:53Z","pid":39897,"engine":"r","severity":"error","render":false,"text":"## Error: invalid subscript type 'list'"}
+{"chunk":null,"ts":"2026-09-25T02:07:03Z","pid":39897,"engine":"r","severity":"error","render":false,"text":"## Error: unused argument (select = c(cc1_data, population_type, flower_number, ovary_width, ovary_height))"}
+{"chunk":null,"ts":"2026-09-25T02:07:10Z","pid":39897,"engine":"r","severity":"error","render":false,"text":"## Error: object 'population_type' not found"}
+{"chunk":null,"ts":"2026-09-25T02:08:53Z","pid":39897,"engine":"r","severity":"error","render":false,"text":"## Error: variable lengths differ (found for 'population_type')"}
+{"chunk":null,"ts":"2026-09-25T02:09:41Z","pid":39897,"engine":"r","severity":"error","render":false,"text":"## Error: variable lengths differ (found for 'population_type')"}
+{"chunk":null,"ts":"2026-09-25T02:10:28Z","pid":39897,"engine":"r","severity":"warning","render":false,"warning":"## Warning: package ‘knitr’ was built under R version 4.4.3"}
+{"chunk":null,"ts":"2026-09-25T02:19:11Z","pid":39897,"engine":"r","severity":"error","render":false,"text":"## Error: \u001b[1m\u001b[22m`mapping` must be created by `aes()`.\n\u001b[31m✖\u001b[39m You've supplied a \u001b[34m<formula>\u001b[39m object."}
+{"chunk":null,"ts":"2026-09-25T02:24:20Z","pid":39897,"engine":"r","severity":"warning","render":false,"warning":"## Warning: \u001b[1m\u001b[22mRemoved 2 rows containing non-finite outside the scale range (`stat_bin()`)."}
+{"chunk":null,"ts":"2026-09-25T02:24:58Z","pid":39897,"engine":"r","severity":"error","render":false,"text":"## Error: \u001b[1m\u001b[22mAt least one layer must contain all faceting variables: `ovary_area`\n\u001b[31m✖\u001b[39m Plot is missing `ovary_area`\n\u001b[31m✖\u001b[39m Layer 1 is missing `ovary_area`"}
+{"chunk":null,"ts":"2026-09-25T02:26:41Z","pid":39897,"engine":"r","severity":"error","render":false,"text":"## Error: \u001b[1m\u001b[22mAt least one layer must contain all faceting variables: `ovary_area`\n\u001b[31m✖\u001b[39m Plot is missing `ovary_area`\n\u001b[31m✖\u001b[39m Layer 1 is missing `ovary_area`"}
+{"chunk":null,"ts":"2026-09-25T02:27:09Z","pid":39897,"engine":"r","severity":"warning","render":false,"warning":"## Warning: \u001b[1m\u001b[22mRemoved 2 rows containing non-finite outside the scale range (`stat_bin()`)."}
+{"chunk":null,"ts":"2026-09-25T02:27:46Z","pid":39897,"engine":"r","severity":"error","render":false,"text":"## Error: object 'population_type' not found"}
+{"chunk":null,"ts":"2026-09-25T02:27:51Z","pid":39897,"engine":"r","severity":"warning","render":false,"warning":"## Warning: \u001b[1m\u001b[22mRemoved 2 rows containing non-finite outside the scale range (`stat_bin()`)."}
+{"chunk":null,"ts":"2026-09-25T02:28:35Z","pid":39897,"engine":"r","severity":"warning","render":false,"warning":"## Warning: \u001b[1m\u001b[22mRemoved 2 rows containing non-finite outside the scale range (`stat_bin()`)."}
+{"chunk":null,"ts":"2026-09-25T02:31:31Z","pid":39897,"engine":"r","severity":"warning","render":false,"warning":"## Warning: \u001b[1m\u001b[22mRemoved 2 rows containing non-finite outside the scale range (`stat_bin()`)."}
+{"chunk":null,"ts":"2026-09-25T02:32:20Z","pid":39897,"engine":"r","severity":"error","render":false,"text":"## Error: undefined columns selected"}
+{"chunk":null,"ts":"2026-09-25T02:32:45Z","pid":39897,"engine":"r","severity":"warning","render":false,"warning":"## Warning: \u001b[1m\u001b[22mRemoved 2 rows containing non-finite outside the scale range (`stat_bin()`)."}
