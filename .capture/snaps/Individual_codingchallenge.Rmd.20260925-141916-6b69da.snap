@@ -91,7 +91,7 @@ tail(cc1_data_mod)
 
 Write the formula you used for ovary area as a **full-line equation** in LaTeX (Chapter 5, *Equations*), using `\times` for multiplication. Then, in a sentence of ordinary text, state its units using an **in-line equation** with a superscript.
 
-$$text(ovaryarea) = text(ovarywidth)\text(ovaryheight)$$
+$$text(ovaryarea) = text(ovary_width)\ovaryheight$$
 $mm^2 = mm\mm$
 
 
@@ -120,7 +120,7 @@ library(ggplot2)
 
 
 
-ggplot(aes(x=ovary_area), data = cc1_data_mod) + geom_histogram(binwidth=0.8) + facet_wrap(~population_type) + labs(x = "Ovary Area (mm^2)", y = "Frequency", title = "Distribution of Ovary Area by Population Type") + theme_classic()
+ggplot(aes(x=ovary_area), data = cc1_data_mod) + geom_histogram(binwidth=4) + facet_wrap(~population_type) + labs(x = "Ovary Area (mm^2)", y = "Frequency", title = "Distribution of Ovary Area by Population Type") + theme_classic()
 ```
 
 # Image

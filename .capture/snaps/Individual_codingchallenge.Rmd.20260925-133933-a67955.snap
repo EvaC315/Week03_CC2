@@ -38,7 +38,7 @@ Write the group members as an **ordered list** (Chapter 5, *Lists*). For each me
 
 The chunk below sets the default options for every other chunk in the document. Add the **chunk option** (Chapter 5, *Code Chunk Arguments*) that runs it without showing either the code or any output in the knitted report.
 
-```{r code-chunk-name, include=FALSE}
+```{r code-chunk-name, eval=F}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
@@ -51,35 +51,33 @@ Markdown table
 ------------------------------
 variable | description | units
 ---------|-------------|-------
-population_type | Asexual or sexual | none
-ovary_width | width of ovary | mm
-ovary_height | ovary height | mm
-flower_number | number of flowers | numbers
+population_type
+ovary_width
+ovary_height
+flower_number
 
 
 # Import and clean the data
 
 Copy `A1_Data_Excel.csv` from your Coding Challenge 1 project into this project's `data` folder. In the chunk below, import it with `read.csv()`, keep the appropriate rows and columns (as you did in Coding Challenge 1), and add the `ovary_area` column (Chapter 3, *New Columns*). Save the cleaned data as `cc1_data`.
 
-```{r import-clean, include=FALSE, messages=FALSE, warning=FALSE}
+```{r import-clean}
 cc1_data <- read.csv("A1_Data_Excel.csv", header=T)
 library(tidyverse)
 library(dplyr)
 
-cc1_data_mod <- cc1_data[1:46, c("population_type", "flower_number", "ovary_width", "ovary_height")]
-
-
+cc1_data_mod <- cc1_data_mod[!is.na(cc1_data_mod$flower_number), c("population_type", "flower_number", "ovary_width", "ovary_height")]
+cc1_data_mod <- select(cc1_data, population_type, flower_number, ovary_width, ovary_height)
 
 cc1_data_mod$ovary_area <- cc1_data_mod$ovary_width*cc1_data_mod$ovary_height
 
 
-
-#!is.na(cc1_data_mod$flower_number) gets rid of rows with NA
+#!is.na(cc1_data_mod$flower_number)
 ```
 
 Now document the inspection commands you used (`class()`, `dim()`, `str()`, `head()`, `tail()`) in the chunk below. Add the chunk option that **shows this code in the report but does not run it**, so that the reader can see what you checked without pages of output.
 
-```{r data-inspection, eval=FALSE}
+```{r, eval=F}
 class(cc1_data)
 dim(cc1_data_mod)
 str(cc1_data_mod)
@@ -91,8 +89,9 @@ tail(cc1_data_mod)
 
 Write the formula you used for ovary area as a **full-line equation** in LaTeX (Chapter 5, *Equations*), using `\times` for multiplication. Then, in a sentence of ordinary text, state its units using an **in-line equation** with a superscript.
 
-$$text(ovaryarea) = text(ovarywidth)\text(ovaryheight)$$
+$$ovaryarea = ovarywidth\ovaryheight$$
 $mm^2 = mm\mm$
+
 
 
 # Dynamic table
@@ -101,12 +100,12 @@ $mm^2 = mm\mm$
 
 ```{r setup, include=FALSE}
 area_means <- aggregate(ovary_area ~ population_type, data = cc1_data_mod, mean)
-area_means
+
 ```
 
 **b.** Display `area_means` with `kable()` from the `knitr` package (Chapter 5, *Dynamic Tables*), including a `caption`. This chunk should show the **table but not the code**.
 
-```{r area-table, echo=FALSE, warning=FALSE}
+```{r area-table}
 library(knitr)
 kable(area_means, caption = "area means")
 ```
@@ -117,18 +116,18 @@ Make a histogram of `ovary_area` with `ggplot()` + `geom_histogram()` (Chapter 4
 
 ```{r ovary-hist, echo=FALSE, message=FALSE}
 library(ggplot2)
-
-
-
-ggplot(aes(x=ovary_area), data = cc1_data_mod) + geom_histogram(binwidth=0.8) + facet_wrap(~population_type) + labs(x = "Ovary Area (mm^2)", y = "Frequency", title = "Distribution of Ovary Area by Population Type") + theme_classic()
+cc1_data_mod$ovary_area <- cc1_data_mod$ovary_width*cc1_data_mod$ovary_height
+cc1_data_mod <- cc1_data_mod[1:46,]
+tail(cc1_data_mod)
+head(cc1_data_mod)
+ggplot(aes(x=ovary_area), data = cc1_data_mod) + geom_histogram(binwidth=4) + facet_wrap(~population_type) + labs(x = "Ovary Area (mm^2)", y = "Frequency", title = "Distribution of Ovary Area by Population Type") + theme_classic()
 ```
 
 # Image
 
 Embed an image of the study species, *Solanum pimpinellifolium*, with Markdown image syntax (Chapter 5, *Images*). Save the image file in an `images` folder inside your project folder and use a **relative path**, exactly as the chapter does, so that the image is pushed to GitHub with everything else. The text in the square brackets is the caption. Below the image, give the **source** as a Markdown link to the page you took it from.
 
-![Solanum pimpinellifolium](./Images/Hydroponic_g13.png)
-
+![Solanum pimpinellifolium](./Images/tomato.png)
 
 
 

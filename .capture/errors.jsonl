@@ -51,3 +51,4 @@
 {"chunk":null,"ts":"2026-09-25T02:31:31Z","pid":39897,"engine":"r","severity":"warning","render":false,"warning":"## Warning: \u001b[1m\u001b[22mRemoved 2 rows containing non-finite outside the scale range (`stat_bin()`)."}
 {"chunk":null,"ts":"2026-09-25T02:32:20Z","pid":39897,"engine":"r","severity":"error","render":false,"text":"## Error: undefined columns selected"}
 {"chunk":null,"ts":"2026-09-25T02:32:45Z","pid":39897,"engine":"r","severity":"warning","render":false,"warning":"## Warning: \u001b[1m\u001b[22mRemoved 2 rows containing non-finite outside the scale range (`stat_bin()`)."}
+{"chunk":null,"ts":"2026-09-25T13:40:09Z","pid":39897,"engine":"r","severity":"error","render":false,"text":"## Error: invalid subscript type 'list'"}

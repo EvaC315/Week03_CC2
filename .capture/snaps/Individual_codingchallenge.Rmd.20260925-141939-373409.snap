@@ -120,7 +120,7 @@ library(ggplot2)
 
 
 
-ggplot(aes(x=ovary_area), data = cc1_data_mod) + geom_histogram(binwidth=0.8) + facet_wrap(~population_type) + labs(x = "Ovary Area (mm^2)", y = "Frequency", title = "Distribution of Ovary Area by Population Type") + theme_classic()
+ggplot(aes(x=ovary_area), data = cc1_data_mod) + geom_histogram(binwidth=4) + facet_wrap(~population_type) + labs(x = "Ovary Area (mm^2)", y = "Frequency", title = "Distribution of Ovary Area by Population Type") + theme_classic()
 ```
 
 # Image

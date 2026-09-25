@@ -49,11 +49,17 @@ Write a **Markdown table** (Chapter 5, *Tables*) with three columns — variable
 Markdown table
 
 ------------------------------
+
 variable | description | units
+
 ---------|-------------|-------
+
 population_type | Asexual or sexual | none
+
 ovary_width | width of ovary | mm
+
 ovary_height | ovary height | mm
+
 flower_number | number of flowers | numbers
 
 
@@ -91,7 +97,7 @@ tail(cc1_data_mod)
 
 Write the formula you used for ovary area as a **full-line equation** in LaTeX (Chapter 5, *Equations*), using `\times` for multiplication. Then, in a sentence of ordinary text, state its units using an **in-line equation** with a superscript.
 
-$$text(ovaryarea) = text(ovarywidth)\text(ovaryheight)$$
+$$ovaryarea = ovarywidth\ovaryheight$$
 $mm^2 = mm\mm$
 
 
@@ -99,7 +105,7 @@ $mm^2 = mm\mm$
 
 **a.** In the chunk below, calculate the mean `ovary_area` for each `population_type` with `aggregate()` (Chapter 3, *Other Functions*) and save the result as `area_means`. This chunk should run but be **completely hidden** in the report.
 
-```{r setup, include=FALSE}
+```{r setup, echo=FALSE}
 area_means <- aggregate(ovary_area ~ population_type, data = cc1_data_mod, mean)
 area_means
 ```
@@ -120,15 +126,14 @@ library(ggplot2)
 
 
 
-ggplot(aes(x=ovary_area), data = cc1_data_mod) + geom_histogram(binwidth=0.8) + facet_wrap(~population_type) + labs(x = "Ovary Area (mm^2)", y = "Frequency", title = "Distribution of Ovary Area by Population Type") + theme_classic()
+ggplot(aes(x=ovary_area), data = cc1_data_mod) + geom_histogram(binwidth=4) + facet_wrap(~population_type) + labs(x = "Ovary Area (mm^2)", y = "Frequency", title = "Distribution of Ovary Area by Population Type") + theme_classic()
 ```
 
 # Image
 
 Embed an image of the study species, *Solanum pimpinellifolium*, with Markdown image syntax (Chapter 5, *Images*). Save the image file in an `images` folder inside your project folder and use a **relative path**, exactly as the chapter does, so that the image is pushed to GitHub with everything else. The text in the square brackets is the caption. Below the image, give the **source** as a Markdown link to the page you took it from.
 
-![Solanum pimpinellifolium](./Images/Hydroponic_g13.png)
-
+![Solanum pimpinellifolium](./Images/tomato.png)
 
 
 
